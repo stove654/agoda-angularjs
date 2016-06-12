@@ -1,0 +1,48 @@
+<div id="login-popup" class="login-popup" data-selenium="login-popup">
+
+  <div id="signin-panel" class="signin-panel" data-selenium="signin-panel">
+    <div id="signin-panel-header" class="signin-panel-header" data-selenium="signin-panel-header">
+      <div class="close-panel">
+        <i class="close-popup" data-selenium="signin-close-icon"></i>
+      </div>
+      <h3 data-selenium="signin-header-text">Sign in to your agoda account</h3>
+    </div>
+
+    <form id="signin-panel-form" data-selenium="signin-panel-form">
+      <div id="signin-panel-body" class="signin-panel-body" data-selenium="signin-panel-body">
+        <div id="signin-respond-warning-email-password-incorrect" class="respond-warning" data-selenium="signin-alert-panel-email-password-incorect">
+          Email or Password is incorrect.
+          <a href="https://my.agoda.com/login-problems.html">Click here to get a new password</a>
+        </div>
+        <div id="sign-in-alert-info-before-contact-host" class="alert alert-info" data-selenium="sign-in-alert-info-before-contact-host" style="display:none;">
+          Please sign in so we know where to send the reply
+        </div>
+        <div class="row">
+          <div id="signin-email-section" class="col-xs-6 email-section">
+            <div id="signin-email-label" data-selenium="signin-email-label">Email: <em>*</em></div>
+            <input tabindex="1" data-selenium="signin-email-input" type="text" class="text required" name="signin-email-input" id="signin-email-input">
+
+          </div>
+
+          <div id="signin-password-section" class="col-xs-6 password-section">
+            <div id="signin-password-label" data-selenium="signin-password-label">Password: <em>*</em></div>
+            <input tabindex="2" data-selenium="signin-password-input" type="password" class="text required" name="signin-password-input" id="signin-password-input">
+
+          </div>
+        </div>
+      </div>
+
+      <div id="signin-action-panel" class="signin-action-panel" data-selenium="signin-action-panel">
+        <div class="link-action-panel">
+          <div><a href="https://my.agoda.com/login-problems.html" data-selenium="forget-password-link">Click here to get a new password</a></div>
+          <div> No account yet? <a id="signup-action" class="toggle-link" data-selenium="signup-action">Sign Up</a></div>
+        </div>
+        <div class="button-action-panel">
+          <i id="signin-loading-icon" class="signin-loading-icon" data-selenium="signin-loading-icon"></i>
+          <input data-selenium="signin-submit-button" type="submit" name="signin-submit-button" value="Sign in" id="signin-submit-button" class="action-button">
+        </div>
+      </div>
+    </form>
+  </div>
+
+</div>
